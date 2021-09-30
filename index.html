@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bosh sahifa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Bosh sahifa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="favorites.html">Tanlanganlar</a>
+                <span class="favouritesNumber"></span>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="basket.html">Korzina</a>
+                <span class="added-to-basket-items"></span>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button id="searchBtn" class="btn btn-outline-light" type="button">Qidirish</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <br>
+    
+    <div class="container filter">
+        <div class="row">
+            <div class="col-3">
+                <select id="selectCategory" class="form-select" aria-label="Default select example">
+                    <option value="0" selected>Barchasi</option>
+                    <option value="1">Ayollar kiyimi</option>
+                    <option value="2">Bolalar kiyimi</option>
+                    <option value="3">Erkaklar kiyimi</option>
+                    <option value="4">Oyoq kiyimlar</option>
+                    <option value="5">Aksessuarlar</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="container">
+        <div class="row" id="products"></div>
+    </div>
+
+    
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
